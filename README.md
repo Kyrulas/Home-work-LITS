@@ -7,3 +7,6 @@
 
 ### Task3 "Create a list of text-level semantic elements"
 - http://kyrulas.github.io/lecture-2/task3/listOfElements.html
+
+### Task4 "Create html page of online/offline application"
+- http://kyrulas.github.io/lecture-2/task4/onlineOfflineApplication.html

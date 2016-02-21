@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online and offline application</title>
+	<style type="text/css">
+		h1{
+			text-align: center;
+		}
+
+		#online,#offline{
+			width: 20%;
+			height: 75px;
+			border:1px solid black;
+			text-align: center;
+			font-size: 25px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#online{
+			background-color: rgb(61, 204, 52);
+		}
+		#offline{
+			background-color: rgb(54, 144, 222);	
+		}
+	</style>
+</head>
+<body>
+	<h1>Current network status</h1>
+	<div id="online"><p>Online</p></div>
+	<div id="offline"><p>Offline</p></div>
+</body>
+<script type="text/javascript">
+	var showOnline = function(){
+		document.getElementById("offline").style.display="none"; 
+		document.getElementById("online").style.display="block";
+	};
+	var showOffline = function(){
+		document.getElementById("online").style.display="none";
+		document.getElementById("offline").style.display="block";
+	};
+	document.getElementById("offline").style.display="none";
+	window.addEventListener("online", showOnline);
+	window.addEventListener("offline", showOffline);
+
+</script>
+</html>
