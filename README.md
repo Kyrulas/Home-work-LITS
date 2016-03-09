@@ -17,6 +17,6 @@
 ### Task6 "Landing-Ok.psd"
 - http://kyrulas.github.io/Home-work-LITS/task6/joyvy.html
 
-### Task6 "Landing-mess.psd"
+### Task7 "Landing-mess.psd"
 - http://kyrulas.github.io/Home-work-LITS/task7/sloto.html
 
