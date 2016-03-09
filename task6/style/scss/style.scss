@@ -1,0 +1,101 @@
+@import "reset.scss";
+
+@font-face{
+	font-family: "Sans";
+	src: url("../../fonts/PTS55F.ttf");
+	font-style:normal;
+}
+body{
+	max-width: 1152px;
+	margin:0px auto;
+	background-color: #0C0C0C;
+	font-family:Sans;
+	color:#ffffff;
+}
+header{
+	text-align: center;
+	background-image: url("../../img/header.png") ;
+	height: 355px;
+		#logoImage{
+			margin: 55px 0;
+		}
+		h1{
+			padding-bottom:36px;
+			font-size: 32px;
+		}
+		p{
+			font-size:16px;
+			margin-bottom:42px;
+			opacity:0.5;
+		}
+}
+input{
+	width: 260px;
+	height: 48px;
+	background-color:#00A8D7;
+	border:1px solid #00A8D7;
+	border-radius:4px;
+	box-shadow: 0px 1px 0px 2px #1282ae, 0px -1px 1px 1px rgba(255, 255, 255, 0.44);
+	font-weight:bold;
+	font-size:24px;
+	color:white;
+}
+
+h2{
+	font-size:32px;
+}
+section p{
+	font-size:16px;
+	line-height:24px;
+	opacity:0.5;
+}
+main{
+	margin:0 75px;
+}
+
+
+.firstSection{
+	margin:85px 0px 60px 0px;
+	height:260px;
+		img{
+			float:right;
+		}
+		h2{
+			padding:75px 0px 30px 0px;
+		}
+}
+
+.secondSection{
+	height:330px;
+	margin:0px 0px 140px 0px;
+		img{
+			float:left;
+			padding-right:40px;
+		}
+		h2{
+			padding:140px 0px 30px 0px;
+		}
+}
+
+.thirdSection{
+	height: 245px;
+	margin: 0;
+		img{
+			float: right;
+		}
+		h2{
+			padding:50px 0px 30px 0px;
+		}
+}
+
+footer{
+	background-image: url("../../img/footer.png");
+	height:375px;
+	text-align:center;
+		h1{
+			font-size: 32px;
+			text-align:center;
+			padding:180px 0 55px 0;
+		}
+}
+@import "responsive.scss";

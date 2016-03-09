@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Sans";
+  src: url("../../fonts/PTS55F.ttf");
+  font-style: normal; }
+body {
+  max-width: 1152px;
+  margin: 0px auto;
+  background-color: #0C0C0C;
+  font-family: Sans;
+  color: #ffffff; }
+
+header {
+  text-align: center;
+  background-image: url("../../img/header.png");
+  height: 355px; }
+  header #logoImage {
+    margin: 55px 0; }
+  header h1 {
+    padding-bottom: 36px;
+    font-size: 32px; }
+  header p {
+    font-size: 16px;
+    margin-bottom: 42px;
+    opacity: 0.5; }
+
+input {
+  width: 260px;
+  height: 48px;
+  background-color: #00A8D7;
+  border: 1px solid #00A8D7;
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px 2px #1282ae, 0px -1px 1px 1px rgba(255, 255, 255, 0.44);
+  font-weight: bold;
+  font-size: 24px;
+  color: white; }
+
+h2 {
+  font-size: 32px; }
+
+section p {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.5; }
+
+main {
+  margin: 0 75px; }
+
+.firstSection {
+  margin: 85px 0px 60px 0px;
+  height: 260px; }
+  .firstSection img {
+    float: right; }
+  .firstSection h2 {
+    padding: 75px 0px 30px 0px; }
+
+.secondSection {
+  height: 330px;
+  margin: 0px 0px 140px 0px; }
+  .secondSection img {
+    float: left;
+    padding-right: 40px; }
+  .secondSection h2 {
+    padding: 140px 0px 30px 0px; }
+
+.thirdSection {
+  height: 245px;
+  margin: 0; }
+  .thirdSection img {
+    float: right; }
+  .thirdSection h2 {
+    padding: 50px 0px 30px 0px; }
+
+footer {
+  background-image: url("../../img/footer.png");
+  height: 375px;
+  text-align: center; }
+  footer h1 {
+    font-size: 32px;
+    text-align: center;
+    padding: 180px 0 55px 0; }
+
+@media screen and (device-width: 860px) {
+  body {
+    margin: 0; }
+
+  img.right, img.left {
+    float: none; }
+
+  section {
+    overflow: auto;
+    height: auto; }
+
+  .firstSection, .secondSection, .thirdSection {
+    height: auto;
+    text-align: center; }
+
+  main {
+    margin: 0; } }
+
+/*# sourceMappingURL=style.css.map */

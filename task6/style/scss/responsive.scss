@@ -1,0 +1,19 @@
+@media screen and (device-width:860px){
+	body{
+		margin:0;
+	}
+img.right,img.left{
+		float:none;
+}
+section{
+	overflow:auto;
+	height:auto;
+}
+.firstSection,.secondSection,.thirdSection{
+	height:auto;
+	text-align: center;
+}
+main{
+	margin:0;
+}
+}
