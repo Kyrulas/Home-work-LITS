@@ -20,3 +20,5 @@
 ### Task7 "Landing-mess.psd"
 - http://kyrulas.github.io/Home-work-LITS/task7/sloto.html
 
+### Task8 "Dating school.psd"
+- http://kyrulas.github.io/Home-work-LITS/task8/coding.html
