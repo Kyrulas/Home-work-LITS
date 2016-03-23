@@ -22,3 +22,12 @@
 
 ### Task8 "Dating school.psd"
 - http://kyrulas.github.io/Home-work-LITS/task8/coding.html
+
+### Task9 "User List with classList switching"
+- http://kyrulas.github.io/Home-work-LITS/task9/script.html
+
+### Task10 "List of users, Jquery version"
+- http://kyrulas.github.io/Home-work-LITS/task10/script.html
+
+### Task11 "List of users, Mustache version"
+- http://kyrulas.github.io/Home-work-LITS/task11/script.html
