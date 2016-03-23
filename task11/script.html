@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document Learn JS</title>
+	<style>
+		ul{
+			list-style:none;
+			margin: 50px;
+		}
+		li.user{
+			border:1px solid #000;
+			margin: 10px;
+			padding: 20px;
+			background: lightgrey;
+			font-size: 20px;
+		}
+		li.userActive {
+			border: 1px solid #000;
+			margin: 10px;
+			padding: 20px;
+			font-weight: bold;
+			background: yellow;
+		}
+		 li.userWithBorder {
+        border-width: 20px;
+    }
+    .info{
+    	width: 150px;
+    	height: 150px;
+    }
+    h3{
+    	text-align: left;
+    	font-size: 25px;
+    }
+
+</style>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
+<script type="mustache/x-tmpl" id="name">
+	{{#users}}
+		<li class="user"  onclick="selectUser(this)">{{name}}{{@index}}</li>
+	{{/users}}
+</script>
+<script type="mustache/x-tmpl" id="info">
+
+		<h1>{{name}} {{second}}</h1>
+		<img src="{{avatar}}">
+		<h3>{{info}}</h3>
+		<div>
+			<img class="info" src="{{info1}}"/>
+			<img class="info" src="{{info2}}"/>
+			<img class="info" src="{{info3}}"/>
+		</div>
+
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td valign="top">
+				<ul id="usersListNode"></ul>
+			</td>
+			<td valign="top">
+				<div id="userInfoNode">
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<script src="script.js"></script>
+	<script>
+		drawUsers(users);
+	</script>
+</body>
+</html>
