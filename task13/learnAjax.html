@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document Learn JS</title>
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<style>
+		ul{
+			list-style:none;
+			padding: 0px;
+		}
+		li.user{
+			border:1px solid #000;
+			margin: 10px;
+			padding: 20px;
+			background:  #D81313;
+		}
+		
+		li.userActive {
+			border: 1px solid #000;
+			margin: 10px;
+			padding: 20px;
+			font-weight: bold;
+			background: yellow;
+		}
+		 li.userWithBorder {
+        border-width: 20px;
+      }
+     table{
+     		position:relative;
+    		float:left
+     }
+		
+		#addUser{
+			position:relative;
+    	float:right;
+    	width: 30%;
+			border: 2px solid #D81313;
+			padding: 20px;
+			color:#551111;
+			font-weight: bold;
+			font-size: 20px;
+			margin-right: 5%;
+			margin-top: 10px;
+
+		}
+		input{
+			margin: 10px;
+			display: block;
+			width: 300px;
+			height: 25px;
+			border: 1px solid #D81313;
+		}
+		input[type="button"]{
+			background-color: #D81313;
+			width: 130px;
+			height: 50px;
+			display: inline-block;
+			font-size: 18px;
+			border-radius: 20px;
+			margin-top: 25px;
+			cursor: pointer;
+			border: 0px;
+		}
+</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td valign="top">
+				<ul id="usersListNode"></ul>
+			</td>
+			<td valign="top">
+				<div id="userInfoNode">
+					<h1>{{name}} {{second}}</h1>
+					<img src="{{avatar}}">
+					<h3>{{info}}</h3>
+					<p>{{newfield}}</p>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<form id="addUser">
+		<label for="name">First Name</label>
+    <input type="text" name="name" id="name">
+    <label for="secondName">Second Name</label>
+    <input type="text" name="second" id="secondName">
+    <label for="photo">Photo</label>
+    <input type="url" id="photo" name="avatar">
+    <label for="hobby">Hobby</label>
+    <input type="text" id="hobby" name="info">
+    <label for="netfield">Netfield</label>
+    <input type="text" id="netfield" name="netfield">
+    <input type="button" value="Submit" onclick="addUsers()">
+    <input type="button" value="Reset" onclick="resetForm()">
+	</form>
+
+	<script src="script.js"></script>
+	<script>
+	function addUsers(){
+			$.ajax({
+				method: "POST",
+				url: "http://heedio.me:8383/",
+				data: $("#addUser").serialize()
+			}).done(function(){
+		})
+		}
+
+		function resetForm(){
+			$("#addUser")[0].reset();
+		}
+
+
+	function getData(drawData){
+			$.ajax({
+				url: "http://heedio.me:8383/"
+			}).done(function(data){
+				users = JSON.parse(data);
+				if(typeof drawData === "function"){
+					drawData(users);
+				}
+			})
+		};
+		getData(drawUsers);
+		
+		
+	</script>
+</body>
+</html>
