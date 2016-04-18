@@ -32,5 +32,8 @@
 ### Task11 "List of users, Mustache version"
 - http://kyrulas.github.io/Home-work-LITS/task11/script.html
 
-### Task12 "List of users, Mustache version"
+### Task12 "Drag and Drop"
 - http://kyrulas.github.io/Home-work-LITS/task12/drag.html
+
+### Task13 "Ajax home work"
+- http://kyrulas.github.io/Home-work-LITS/task13/learnAjax.html
